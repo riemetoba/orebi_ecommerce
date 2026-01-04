@@ -10,7 +10,7 @@ const Product = ({ productImg, badgeText, productTitle, productPrice }) => {
       <div className="relative bg-[#f3f3f3]">
         <Image src={productImg} />
         <Badge badgeText={badgeText} className={"absolute top-5 left-5"} />
-        <div className="bg-[#ffffff] p-6 opacity-0 group-hover:opacity-100 transition duration-300 bottom-10 left-0 absolute w-full">
+        <div className="bg-[#ffffff] p-6 opacity-0 group-hover:opacity-100 transition duration-300 bottom-0 left-0 absolute w-full">
           <Flex className={"justify-end gap-x-3"}>
             <h3 className="font-DM text-base text-[#767676]">
               Add to Wish List
