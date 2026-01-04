@@ -7,6 +7,7 @@ import { FaCircle } from "react-icons/fa";
 import { IoGridSharp } from "react-icons/io5";
 import { AiOutlineBars } from "react-icons/ai";
 import { BiSolidDownArrow } from "react-icons/bi";
+import { PiNumberOneFill } from "react-icons/pi";
 import Product from "../Product";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -200,7 +201,7 @@ const Shop = () => {
                 <BiSolidDownArrow className="absolute top-3.5 right-3 text-sm" />
               </div>
             </div>
-            <div className="grid grid-cols-3">
+            <div className="grid grid-cols-3 gap-5">
               {allData.map((item) => (
                 <div>
                   <Product

@@ -27,7 +27,7 @@ const Product = ({ productImg, badgeText, productTitle, productPrice }) => {
           </Flex>
         </div>
       </div>
-      <Flex className={"justify-between mt-4"}>
+      <Flex className={"justify-between"}>
         <h3 className="font-DM text-[20px] font-bold text-deepBlack">{productTitle}</h3>
         <h3 className="font-DM text-base text-[#767676]">{productPrice}</h3>
       </Flex>
