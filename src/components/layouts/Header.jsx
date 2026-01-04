@@ -23,12 +23,12 @@ const Header = () => {
       <div className="py-8">
         <Container>
           <Flex>
-            <div className="w-[40%]">
+            <div className="lg:w-[40%]">
               <Link to={"/"}>
                 <Image src={logo} />
               </Link>
             </div>
-            <div className="w-[60%]">
+            <div className="lg:w-[60%] mx-auto">
               <ul className="flex gap-x-9">
                 <li className="font-DM text-[#767676] text-base hover:text-black hover:font-extrabold duration-300">
                   <Link to={"/"}>Home</Link>
@@ -92,7 +92,7 @@ const Header = () => {
               <input
                 type="text"
                 placeholder="Search Product"
-                className="bg-white w-[500px] h-[45px] pl-5 border-light-gray border"
+                className="bg-white lg:w-[500px] w-[100px] h-[45px] pl-5 border-light-gray border"
               />
               <div className="absolute top-1/3 right-4">
                 <IoMdSearch />

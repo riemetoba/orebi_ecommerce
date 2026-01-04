@@ -4,14 +4,14 @@ import Image from "../Image"
 import adsOne from "../../assets/adsOne.png"
 import adsTwo from "../../assets/adsTwo.png"
 import adsThree from "../../assets/adsThree.png"
-import { Link, Links } from "react-router-dom"
+import { Link, } from "react-router-dom"
 
 
 const Ads = () => {
   return (
     <div className="pt-[140px] pb-[100px]">
          <Container>
-            <Flex className="justify-between gap-x-[30px]">
+            <Flex className="lg:justify-between flex-wrap lg:flex-nowrap gap-x-[30px]">
                 <Link to={"/shop"}>
                 <div className="max-w-[780px] mx-auto">
                     <Image src={adsOne}/>
@@ -19,7 +19,7 @@ const Ads = () => {
                 </Link>
                 <div className="max-w-[780px] mx-auto flex flex-col gap-y-7">
                     <Link to={"/shop"}>
-                    <Image src={adsTwo}/>
+                    <Image src={adsTwo} className={"mt-7 lg:mt-0"}/>
                     </Link>
                     <Link to={"/shop"}>
                     <Image src={adsThree}/>
