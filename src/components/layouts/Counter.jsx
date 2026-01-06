@@ -7,6 +7,14 @@ import { FiMinus } from "react-icons/fi";
 const Counter = () => {
   const count = useSelector((state) => state.counter.value);
   const dispatch = useDispatch();
+  const handleDecrement = () => {
+    if (count > 0) {
+      dispatch(decrement());
+    } else {
+      return;
+    }
+  };
+
   return (
     <>
       <Container>
@@ -14,7 +22,8 @@ const Counter = () => {
           <div className="flex justify-between">
             <button
               aria-label="Decrement value"
-              onClick={() => dispatch(decrement())}
+              // onClick={() => dispatch(decrement())}
+              onClick={handleDecrement}
             >
               <FiMinus />
             </button>
