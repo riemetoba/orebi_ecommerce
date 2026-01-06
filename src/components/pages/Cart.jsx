@@ -46,8 +46,11 @@ const Cart = () => {
                   <input className="py-3 px-2 border border-[#F0F0F0]" type="text" placeholder="SIZE"/>
                   <p>Apply coupon</p>
                 </div>
-                <p>Update cart</p>
+                <p className="font-DM font-bold">Update cart</p>
             </Flex>
+          </div>
+          <div className="text-right text-2xl font-DM font-bold py-5">
+            <p>Cart totals</p>
           </div>
         </Container>
     </div>
