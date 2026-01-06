@@ -121,7 +121,7 @@ const Header = () => {
               {/* User Dropdown  */}
               {/* Cart and Dropdown  */}
               <div className="relative" onClick={() => setCartShow(!cartShow)}>
-                <FaShoppingCart className="cursor-pointer"/>
+                <FaShoppingCart className="cursor-pointer" />
                 {cartShow && (
                   <div className="w-[360px] h-[260px] absolute right-0 top-6">
                     <div className="bg-[#F5F5F3] py-5 px-4">
@@ -146,7 +146,7 @@ const Header = () => {
                         <h5 className="font-DM text-base mx-1"> $44.00</h5>
                       </div>
                       <div className="flex items-center justify-between">
-                        <Button btnText={"View Cart"} />
+                        <Link to={"/cart"}><Button btnText={"View Cart"} /></Link>
                         <Button btnText={"Checkout"} />
                       </div>
                     </div>
