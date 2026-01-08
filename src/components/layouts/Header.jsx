@@ -23,23 +23,23 @@ const Header = () => {
       <div className="py-8">
         <Container>
           <Flex>
-            <div className="lg:w-[40%]">
+            <div className="w-[30%] ml-1 sm:w-[40%] sm:ml-5">
               <Link to={"/"}>
                 <Image src={logo} />
               </Link>
             </div>
-            <div className="lg:w-[60%] mx-auto">
-              <ul className="flex gap-x-9">
-                <li className="font-DM text-[#767676] text-base hover:text-black hover:font-extrabold duration-300">
+            <div className="w-[70%] mx-auto sm:[60%]">
+              <ul className="flex items-center gap-x-2 sm:gap-x-6 lg:gap-x-9">
+                <li className="font-DM text-[#767676] text-sm sm:text-base hover:text-black hover:font-extrabold duration-300">
                   <Link to={"/"}>Home</Link>
                 </li>
-                <li className="font-DM text-[#767676] text-base hover:text-black hover:font-extrabold duration-300">
+                <li className="font-DM text-[#767676] text-sm sm:text-base hover:text-black hover:font-extrabold duration-300">
                   <Link to={"/shop"}>Shop</Link>
                 </li>
-                <li className="font-DM text-[#767676] text-base hover:text-black hover:font-extrabold duration-300">
+                <li className="font-DM text-[#767676] text-sm sm:text-base hover:text-black hover:font-extrabold duration-300">
                   <Link to={"/about"}>About</Link>
                 </li>
-                <li className="font-DM text-[#767676] text-base hover:text-black hover:font-extrabold duration-300">
+                <li className="font-DM text-[#767676] text-sm sm:text-base hover:text-black hover:font-extrabold duration-300">
                   <Link to={"/contact"}>Contacts</Link>
                 </li>
               </ul>
@@ -51,10 +51,10 @@ const Header = () => {
       {/* // Search and Cart Part Start */}
       <div className="py-6 bg-[#F5F5F3] border-light-gray border">
         <Container>
-          <Flex className={"justify-between"}>
-            <div className="border-light-gray border relative">
+          <Flex className={"gap-x-5 sm:gap-x-15 md:gap-x-30 lg:justify-between"}>
+            <div className="relative">
               <div
-                className="flex items-center cursor-pointer"
+                className="flex items-center text-sm sm:text-base lg:text-base cursor-pointer"
                 onClick={() => setShow(!show)}
               >
                 <HiBars2 className="font-extrabold text-[24px] mr-2.5" />
@@ -92,13 +92,13 @@ const Header = () => {
               <input
                 type="text"
                 placeholder="Search Product"
-                className="bg-white lg:w-[500px] w-[100px] h-[45px] pl-5 border-light-gray border"
+                className="bg-white text-[10px] sm:text-base lg:w-[500px] w-[70px] sm:w-[200px] h-[45px] sm:pl-5 border-light-gray border"
               />
-              <div className="absolute top-1/3 right-4">
+              <div className="text-transparent sm:text-[#2B2B2B] absolute top-1/3 right-4">
                 <IoMdSearch />
               </div>
             </div>
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-x-2 sm:gap-10">
               <div
                 className="flex items-center gap-x-2 relative cursor-pointer"
                 onClick={() => setUserShow(!userShow)}

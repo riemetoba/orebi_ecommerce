@@ -35,7 +35,7 @@ const NewArrival = () => {
   return (
     <>
       <Container>
-        <h2 className="text-[39px] font-DM font-bold pb-[55px]">
+        <h2 className="text-[24px] font-DM font-bold pb-10 lg:pb-[55px] lg:text-[39px]">
           New Arrivals
         </h2>
         <div className="-mx-4">
