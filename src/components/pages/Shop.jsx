@@ -8,11 +8,14 @@ import { IoGridSharp } from "react-icons/io5";
 import { AiOutlineBars } from "react-icons/ai";
 import { BiSolidDownArrow } from "react-icons/bi";
 import Product from "../Product";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import axios from "axios";
+import mixitup from "mixitup";
 
 const Shop = () => {
+  const containerRef = useRef(null);
   let [allData, setAllData] = useState([]);
+  // API 
   useEffect(() => {
     async function alldatas() {
       let data = await axios.get("https://dummyjson.com/products");
@@ -20,6 +23,18 @@ const Shop = () => {
     }
     alldatas();
   }, []);
+  // API 
+  // Mixitup
+   useEffect(() => {
+        if (containerRef.current && allData.length > 0) {
+            mixitup(containerRef.current, {
+                animation: {
+                    duration: 400,
+                }
+            });
+        }
+    },);
+  // Mixitup
   return (
     <div>
       <Container>
@@ -41,40 +56,31 @@ const Shop = () => {
             <h5 className="font-DM font-bold text-[20px] text-deepBlack py-10">
               Shop by Category
             </h5>
-            <div className="">
-              <ul>
-                <div className="flex items-center justify-between font-DM text-base text-[#767676] border-b border-b-[#D8D8D8] py-5">
-                  <li className="">
-                    <Link to={"/"}>Category 1</Link>
-                  </li>
-                  <FiPlus />
-                </div>
-                <div className="flex items-center justify-between font-DM text-base text-[#767676] border-b border-b-[#D8D8D8] py-5">
-                  <li className="">
-                    <Link to={"/"}>Category 2</Link>
-                  </li>
-                  <FiPlus />
-                </div>
-                <div className="flex items-center justify-between font-DM text-base text-[#767676] border-b border-b-[#D8D8D8] py-5">
-                  <li className="">
-                    <Link to={"/"}>Category 3</Link>
-                  </li>
-                  <FiPlus />
-                </div>
-                <div className="flex items-center justify-between font-DM text-base text-[#767676] border-b border-b-[#D8D8D8] py-5">
-                  <li className="">
-                    <Link to={"/"}>Category 4</Link>
-                  </li>
-                  <FiPlus />
-                </div>
-                <div className="flex items-center justify-between font-DM text-base text-[#767676] border-b border-b-[#D8D8D8] py-5">
-                  <li className="">
-                    <Link to={"/"}>Category 5</Link>
-                  </li>
-                  <FiPlus />
-                </div>
-              </ul>
+              <div className="">
+                <ul>
+                    <div data-filter=".categoryOne" className="flex items-center justify-between font-DM text-base text-[#767676] border-b border-b-[#D8D8D8] py-5">
+                        <p>Category 1</p>
+                        <FiPlus />
+                    </div>
+                    <div data-filter=".categoryTwo" className="flex items-center justify-between font-DM text-base text-[#767676] border-b border-b-[#D8D8D8] py-5">
+                        <p>Category 2</p>
+                        <FiPlus />
+                    </div>
+                    <div data-filter=".categoryThree" className="flex items-center justify-between font-DM text-base text-[#767676] border-b border-b-[#D8D8D8] py-5">
+                        <p>Category 3</p>
+                        <FiPlus />
+                    </div>
+                    <div data-filter=".categoryFour" className="flex items-center justify-between font-DM text-base text-[#767676] border-b border-b-[#D8D8D8] py-5">
+                        <p>Category 4</p>
+                        <FiPlus />
+                    </div>
+                    <div data-filter=".categoryFive" className="flex items-center justify-between font-DM text-base text-[#767676] border-b border-b-[#D8D8D8] py-5">
+                        <p>Category 5</p>
+                        <FiPlus />
+                    </div>
+                </ul>
             </div>
+
             {/* Shop by Category part  */}
             {/* Shop by color part  */}
             <h5 className="font-DM font-bold text-[20px] text-deepBlack py-10">
@@ -200,17 +206,29 @@ const Shop = () => {
                 <BiSolidDownArrow className="absolute top-3.5 right-3 text-sm" />
               </div>
             </div>
-            <div className="grid grid-cols-3 gap-5">
-              {allData.map((item) => (
-                <div>
-                  <Product
-                    productImg={item.thumbnail}
-                    badgeText={item.rating}
-                    productTitle={item.title}
-                    productPrice={item.price}
-                  />
-                </div>
-              ))}
+            <div className="" ref={containerRef}>
+              <div className="grid grid-cols-3 gap-5">
+                {allData.slice(0, 9).map((item) => (
+                  <div className="mix categoryOne">
+                    <Product
+                      productImg={item.thumbnail}
+                      badgeText={item.rating}
+                      productTitle={item.title}
+                      productPrice={item.price}
+                    />
+                  </div>
+                ))}
+                {allData.slice(10, 20).map((item) => (
+                  <div className="mix categoryTwo">
+                    <Product
+                      productImg={item.thumbnail}
+                      badgeText={item.rating}
+                      productTitle={item.title}
+                      productPrice={item.price}
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
           {/* Flex right end  */}

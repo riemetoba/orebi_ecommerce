@@ -106,7 +106,7 @@ const Header = () => {
                 <IoPersonSharp />
                 <BiSolidDownArrow className="text-[10px]" />
                 {userShow && (
-                  <div className="bg-amber-700 w-[200px] absolute right-0 top-6">
+                  <div className="w-[200px] absolute right-0 top-6">
                     <ul>
                       <li className="font-DM text-sm font-bold text-[#ffffff] border-b-2 border-b-[#2B2B2B] bg-deepBlack text-center py-4 hover:bg-[#ffffff] hover:text-deepBlack duration-300 cursor-pointer">
                         <Link to={"/"}>My Account</Link>
