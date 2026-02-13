@@ -5,6 +5,7 @@ import Image from "../Image";
 import cartSunglass from "../../assets/cartSunglass.png";
 import { RxCross2 } from "react-icons/rx";
 import Counter from "../layouts/Counter";
+import Button from "../Button";
 
 const Cart = () => {
   return (
@@ -43,14 +44,36 @@ const Cart = () => {
           <div className="py-8 px-5 border border-[#F0F0F0]">
             <Flex className={"justify-between"}>
                 <div className="flex gap-3 items-center">
-                  <input className="py-3 px-2 border border-[#F0F0F0]" type="text" placeholder="SIZE"/>
+                  <input className="py-1.5 px-2 border border-[#F0F0F0]" type="text" placeholder="SIZE"/>
                   <p>Apply coupon</p>
                 </div>
-                <p className="font-DM font-bold">Update cart</p>
+                <p className="font-DM font-medium">Update cart</p>
             </Flex>
           </div>
-          <div className="text-right text-2xl font-DM font-bold py-5">
-            <p>Cart totals</p>
+          {/* title  */}
+           <p className="text-right text-[20px] font-DM font-medium py-5">Cart totals</p>
+           {/* 1st flex  */}
+          <div className="flex items-center justify-end">
+            <div className="w-[322px] px-3 py-4 border border-[#F0F0F0]">
+           <p className="text-deepBlack font-DM text-base">Subtotal</p>
+          </div>
+            <div className="w-[322px] px-3 py-4 border-t border-r border-b border-[#F0F0F0]">
+           <p className="text-deepBlack font-DM text-base">389.99 $</p>
+          </div>
+          </div>
+          {/* 2nd flex  */}
+          <div className="flex items-center justify-end">
+            <div className="w-[322px] px-3 py-4 border-l border-r border-b border-[#F0F0F0]">
+           <p className="text-deepBlack font-DM text-base">Subtotal</p>
+          </div>
+            <div className="w-[322px] px-3 py-4 border-r border-b border-[#F0F0F0]">
+           <p className="text-deepBlack font-DM text-base">389.99 $</p>
+          </div>
+          </div>
+          {/* 2nd flex  */}
+          {/* button  */}
+          <div className="text-right mt-9 font-DM">
+            <Button btnText={"Proceed to Checkout"}/>
           </div>
         </Container>
     </div>
