@@ -7,6 +7,7 @@ import Error from './components/pages/Error';
 import Shop from './components/pages/Shop';
 import Cart from './components/pages/Cart';
 import Contact from './components/pages/Contact';
+import Form from './components/pages/Form';
 
 const App = () => {
  
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/form" element={<Form />} />
         <Route path="*" element={<Error />} />
         </Route>
       </Routes>
