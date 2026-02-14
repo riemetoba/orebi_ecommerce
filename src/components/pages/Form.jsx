@@ -1,6 +1,8 @@
 import { MdKeyboardArrowRight } from "react-icons/md";
 import Container from "../Container";
 import Button from "../Button";
+import Image from "../Image";
+import map from "/src/assets/map.jpg"
 
 const Form = () => {
   return (
@@ -42,7 +44,8 @@ const Form = () => {
             placeholder="Your message here"
           />
         </div>
-        <Button className={"mt-8"} btnText={"Post"}/>
+        <Button className={"mt-8 mb-30"} btnText={"Post"}/>
+        <Image src={map}/>
       </Container>
     </div>
   );
