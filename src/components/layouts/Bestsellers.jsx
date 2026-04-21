@@ -46,6 +46,7 @@ const Bestsellers = () => {
                 productPrice={"$44.00"}
               />
             </div>
+             {/* ======== */}
             <div>
               <Product
                 productImg={bestSellersThree}
