@@ -55,6 +55,7 @@ const Bestsellers = () => {
                 productPrice={"$44.00"}
               />
             </div>
+             {/* ======== */}
             <div>
               <Product
                 productImg={bestSellersFour}
@@ -63,6 +64,7 @@ const Bestsellers = () => {
                 productPrice={"$44.00"}
               />
             </div>
+             {/* ======== */}
             <div>
               <Product
                 productImg={bestSellersTwo}
@@ -71,6 +73,7 @@ const Bestsellers = () => {
                 productPrice={"$44.00"}
               />
             </div>
+             {/* ======== */}
             <div>
               <Product
                 productImg={bestSellersThree}
@@ -79,6 +82,7 @@ const Bestsellers = () => {
                 productPrice={"$44.00"}
               />
             </div>
+             {/* ======== */}
           </Slider>
         </div>
       </Container>
