@@ -25,8 +25,10 @@ const Bestsellers = () => {
         <h2 className="text-[24px] font-DM font-bold pb-10 lg:pb-[55px] lg:text-[39px] pt-25">
           Our Bestsellers
         </h2>
+        {/* ========= */}
         <div className="-mx-4">
           <Slider {...settings}>
+            {/* ======== */}
             <div>
               <Product
                 productImg={bestSellersOne}
@@ -35,6 +37,7 @@ const Bestsellers = () => {
                 productPrice={"$44.00"}
               />
             </div>
+             {/* ======== */}
             <div>
               <Product
                 productImg={bestSellersTwo}
