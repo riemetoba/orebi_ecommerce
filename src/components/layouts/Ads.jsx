@@ -12,11 +12,13 @@ const Ads = () => {
     <div className="pt-[140px] pb-[100px]">
          <Container>
             <Flex className="lg:justify-between flex-wrap lg:flex-nowrap gap-x-[30px]">
+              {/* ========= */}
                 <Link to={"/shop"}>
                 <div className="max-w-[780px] mx-auto">
                     <Image src={adsOne}/>
                 </div>
                 </Link>
+                {/* ========= */}
                 <div className="max-w-[780px] mx-auto flex flex-col gap-y-7">
                     <Link to={"/shop"}>
                     <Image src={adsTwo} className={"mt-7 lg:mt-0"}/>
