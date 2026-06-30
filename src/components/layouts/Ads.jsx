@@ -9,7 +9,7 @@ import { Link, } from "react-router-dom"
 
 const Ads = () => {
   return (
-    <div className="pt-[140px] pb-[100px]">
+    <div className="py-10 md:py-30">
          <Container>
             <Flex className="lg:justify-between flex-wrap lg:flex-nowrap gap-x-[30px]">
               {/* ========= */}

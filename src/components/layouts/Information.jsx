@@ -6,7 +6,7 @@ import Flex from "../Flex";
 
 const Information = () => {
   return (
-    <div className="py-6 md:py-8 border-b border-[#F0F0F0]">
+    <div className="py-4 md:py-8 border-b border-[#F0F0F0]">
         <Container>
           <Flex className="flex-col md:flex-row items-start md:items-center justify-between gap-y-4 md:gap-y-0 px-4 sm:px-5 md:px-0">
             <div className="flex items-center">
