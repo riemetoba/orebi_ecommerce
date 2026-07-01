@@ -3,9 +3,9 @@ import Container from "../Container";
 
 const AdsTwo = () => {
   return (
-    <Link to={"/shop"}>
+    <Link to={"/shop"} className="block">
       <Container>
-        <div className="bg-[url('/src/assets/adsBg.jpg')] py-[70px] bg-no-repeat bg-center bg-cover lg:py-[165px] my-25"></div>
+        <div className="bg-[url('/src/assets/adsBg.jpg')] py-11 sm:py-[70px] md:py-30 lg:py-[165px] my-10 md:my-25 bg-no-repeat bg-center bg-cover"></div>
       </Container>
     </Link>
   )

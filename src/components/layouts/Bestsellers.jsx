@@ -49,7 +49,7 @@ const Bestsellers = () => {
   return (
     <>
       <Container>
-        <h2 className="text-[24px] font-DM font-bold pb-10 lg:pb-[55px] lg:text-[39px] pt-25 px-4 md:px-0">
+        <h2 className="text-[24px] font-DM font-bold pb-10 lg:pb-[55px] lg:text-[39px] pt-15 md:pt-25 px-4 md:px-0">
           Our Bestsellers
         </h2>
         {/* ========= */}
