@@ -53,10 +53,10 @@ const Bestsellers = () => {
           Our Bestsellers
         </h2>
         {/* ========= */}
-        <div className="mx-0 md:-mx-4 px-2 md:px-0 w-full overflow-hidden">
+        <div className="mx-0 md:-mx-4 px-2 md:px-0 overflow-hidden">
           <Slider {...settings}>
             {/* ======== */}
-            <div className="px-1.5 md:px-4 w-full">
+            <div className="px-1.5 md:px-4">
               <Product
                 productImg={bestSellersOne}
                 badgeText={"New"}
@@ -65,7 +65,7 @@ const Bestsellers = () => {
               />
             </div>
              {/* ======== */}
-            <div className="px-1.5 md:px-4 w-full">
+            <div className="px-1.5 md:px-4">
               <Product
                 productImg={bestSellersTwo}
                 badgeText={"New"}
@@ -74,7 +74,7 @@ const Bestsellers = () => {
               />
             </div>
              {/* ======== */}
-            <div className="px-1.5 md:px-4 w-full">
+            <div className="px-1.5 md:px-4">
               <Product
                 productImg={bestSellersThree}
                 badgeText={"70%"}
@@ -83,7 +83,7 @@ const Bestsellers = () => {
               />
             </div>
              {/* ======== */}
-            <div className="px-1.5 md:px-4 w-full">
+            <div className="px-1.5 md:px-4">
               <Product
                 productImg={bestSellersFour}
                 badgeText={"New"}
@@ -92,7 +92,7 @@ const Bestsellers = () => {
               />
             </div>
              {/* ======== */}
-            <div className="px-1.5 md:px-4 w-full">
+            <div className="px-1.5 md:px-4">
               <Product
                 productImg={bestSellersTwo}
                 badgeText={"20%"}
@@ -101,7 +101,7 @@ const Bestsellers = () => {
               />
             </div>
              {/* ======== */}
-            <div className="px-1.5 md:px-4 w-full">
+            <div className="px-1.5 md:px-4">
               <Product
                 productImg={bestSellersThree}
                 badgeText={"New"}
