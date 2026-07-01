@@ -51,9 +51,9 @@ const SpecialOffer = () => {
         <h2 className="text-[24px] font-DM font-bold pb-10 lg:pb-[55px] lg:text-[39px] px-4 md:px-0">
           Special Offers
         </h2>
-        <div className="mx-0 md:-mx-4 px-2 md:px-0 w-full overflow-hidden">
+        <div className="mx-0 md:-mx-4 px-2 md:px-0 overflow-hidden">
           <Slider {...settings}>
-            <div className="px-1.5 md:px-4 w-full">
+            <div className="px-1.5 md:px-4">
               <Product
                 productImg={specialOne}
                 badgeText={"New"}
@@ -61,7 +61,7 @@ const SpecialOffer = () => {
                 productPrice={"$44.00"}
               />
             </div>
-            <div className="px-1.5 md:px-4 w-full">
+            <div className="px-1.5 md:px-4">
               <Product
                 productImg={specialTwo}
                 badgeText={"40%"}
@@ -69,7 +69,7 @@ const SpecialOffer = () => {
                 productPrice={"$44.00"}
               />
             </div>
-            <div className="px-1.5 md:px-4 w-full">
+            <div className="px-1.5 md:px-4">
               <Product
                 productImg={specialThree}
                 badgeText={"New"}
@@ -77,7 +77,7 @@ const SpecialOffer = () => {
                 productPrice={"$44.00"}
               />
             </div>
-            <div className="px-1.5 md:px-4 w-full">
+            <div className="px-1.5 md:px-4">
               <Product
                 productImg={specialFour}
                 badgeText={"10%"}
@@ -85,7 +85,7 @@ const SpecialOffer = () => {
                 productPrice={"$44.00"}
               />
             </div>
-            <div className="px-1.5 md:px-4 w-full">
+            <div className="px-1.5 md:px-4">
               <Product
                 productImg={specialOne}
                 badgeText={"New"}
@@ -93,7 +93,7 @@ const SpecialOffer = () => {
                 productPrice={"$44.00"}
               />
             </div>
-            <div className="px-1.5 md:px-4 w-full">
+            <div className="px-1.5 md:px-4">
               <Product
                 productImg={specialThree}
                 badgeText={"New"}
