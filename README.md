@@ -1,16 +1,33 @@
-# React + Vite
+# 🛒 Orebi | Production-Ready eCommerce Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Orebi is a modern, high-performance eCommerce frontend built to simulate real-world production challenges. The architecture focuses heavily on scalable component design, pixel-perfect UI precision, and efficient asynchronous data synchronization between complex REST APIs and global state.
 
-Currently, two official plugins are available:
+[✨ Live Demo](https://react-orebi-e-commerce.vercel.app/) 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ⚡ Architecture & Key Features
 
-## React Compiler
+* **Asynchronous Data Layer:** Fully integrated with REST APIs for real-time product discovery, dynamic sorting, and server-side filtering.
+* **Global State Engine:** Engineered using **Redux Toolkit** to manage predictable states for authentication, persistent cart mechanics, and cross-component communication.
+* **Modern UI/UX System:** Built on top of **Shadcn UI** primitives and customized via **Tailwind CSS** to achieve an accessible, highly interactive, and fluid user experience.
+* **Performance Focused:** Implemented defensive code patterns, responsive image loading, and strict layout constraint rendering for smooth 60fps scrolling across mobile and desktop.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Engineering Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Core:** React.js (Hooks, Context)
+* **State:** Redux Toolkit (RTK)
+* **UI Architect:** Tailwind CSS + Shadcn UI (Radix Primitives)
+* **Data Fetching:** Axios / Native Fetch (Async/Await)
+
+---
+
+## 🧠 Technical Challenges & Engineering Solutions
+
+### 🎯 The Challenge: Asynchronous API Synchronization & Race Conditions
+The core engineering hurdle was managing complex asynchronous lifecycles. Integrating multiple endpoints (Products, Categories, Cart actions) often led to unpredictable data flows, unauthorized state mismatches during network latencies, and redundant component re-renders that degraded user performance.
+
+### 💡 The Engineering Solution:
+* **Predictable Redux Slices:** Centralized API payloads into decoupled Redux slices. Used RTK mechanics to ensure a strict "single source of truth," instantly syncing the global cart state with dynamic product lists.
+* **Resilient Error Boundaries & States:** Designed custom UI skeletons and error catchers to elegantly handle network timeouts or empty API responses, eliminating application crashes.
+* **Strict Payload Validation:** Implemented structural checks on incoming JSON payloads inside lifecycle hooks before firing state updates, completely preventing runtime crashes from broken or incomplete API structural changes.
