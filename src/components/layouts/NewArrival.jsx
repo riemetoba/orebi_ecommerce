@@ -63,10 +63,10 @@ const NewArrival = () => {
         <h2 className="text-[24px] font-DM font-bold pb-10 lg:pb-[55px] lg:text-[39px] px-4 md:px-0">
           New Arrivals
         </h2>
-        <div className="mx-0 md:-mx-4 px-2 md:px-0 w-full overflow-hidden">
+        <div className="mx-0 md:-mx-4 px-2 md:px-0 overflow-hidden">
           <Slider {...settings}>
             {allData.map((item) => (
-              <div key={item.id} className="px-1.5 md:px-4 w-full">
+              <div key={item.id} className="px-1.5 md:px-4">
                 <Product
                   productImg={item.thumbnail}
                   badgeText={item.rating}
@@ -76,7 +76,7 @@ const NewArrival = () => {
               </div>
             ))}
 
-            <div className="px-1.5 md:px-4 w-full">
+            <div className="px-1.5 md:px-4">
               <Product
                 productImg={newArrivalsTwo}
                 badgeText={"New"}
@@ -84,7 +84,7 @@ const NewArrival = () => {
                 productPrice={"$44.00"}
               />
             </div>
-            <div className="px-1.5 md:px-4 w-full">
+            <div className="px-1.5 md:px-4">
               <Product
                 productImg={newArrivalsThree}
                 badgeText={"New"}
@@ -92,7 +92,7 @@ const NewArrival = () => {
                 productPrice={"$44.00"}
               />
             </div>
-            <div className="px-1.5 md:px-4 w-full">
+            <div className="px-1.5 md:px-4">
               <Product
                 productImg={newArrivalsFour}
                 badgeText={"New"}
@@ -100,7 +100,7 @@ const NewArrival = () => {
                 productPrice={"$44.00"}
               />
             </div>
-            <div className="px-1.5 md:px-4 w-full">
+            <div className="px-1.5 md:px-4">
               <Product
                 productImg={newArrivalsOne}
                 badgeText={"New"}
@@ -108,7 +108,7 @@ const NewArrival = () => {
                 productPrice={"$44.00"}
               />
             </div>
-            <div className="px-1.5 md:px-4 w-full">
+            <div className="px-1.5 md:px-4">
               <Product
                 productImg={newArrivalsTwo}
                 badgeText={"New"}
